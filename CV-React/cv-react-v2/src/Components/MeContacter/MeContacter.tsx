@@ -46,7 +46,7 @@ function MeContacter(){
             type: "message",
             placeholder: "Bonjour, je voudrais",
             label: "Message",
-            expression: /^[a-zA-Z0-9._%+-]+$/,
+            expression: /^[a-zA-Z0-9._%+- ]+$/,
             errorClass: "neutral",
             errorMessage: "Forme non valide",
           },
@@ -150,7 +150,7 @@ function MeContacter(){
         <div className="MeContacter">
             <NavLink to='/'><i className="fa-solid fa-circle-chevron-left"></i></NavLink>
             <form className="Formulaire">
-                <h1>Contacte moi</h1>
+                <h1>Contactez moi</h1>
                 {firstThreeInput.map((input) => (
                     <FormInput key={input.id}
                      {...input} value={values[input.name  as keyof typeof values]}
