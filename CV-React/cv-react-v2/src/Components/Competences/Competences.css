@@ -1,0 +1,41 @@
+#Competences{
+    background-color: hsl(240, 70%, 60%);
+    height: 110vh;
+    justify-content: center;
+}
+
+#divCompetences{
+    position: absolute;
+    width: 100%;
+    transform:translateY(30vh);
+
+}
+
+#Competences div{
+    position: absolute;
+    transform:translateY(25vh);
+    color: white;
+}
+
+.Competences{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 35vh ;
+    width: 60%;
+    margin-left: 20%;
+    transition: 0.5s;
+}
+
+.Competences:hover{
+    box-shadow:0 0 20px 5px rgb(207, 199, 140) ;
+} 
+
+.Competences ul{
+    margin-top: 5vh ;
+}
+
+.Competences ul li{
+    color: hsl(240, 70%, 40%) ;
+}

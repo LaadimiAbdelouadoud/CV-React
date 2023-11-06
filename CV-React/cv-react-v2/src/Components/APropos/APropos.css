@@ -1,0 +1,49 @@
+#APropos{
+    background-color: hsl(240, 70%, 40%);
+    height: 110vh;
+    justify-content: center;
+}
+
+#divAPropos{
+    position: absolute;
+    width: 100%;
+    transform:translateY(30vh);
+    color: white;
+}
+
+#APropos div{
+    position: absolute;
+    transform:translateY(30vh);
+    color: white;
+}
+
+
+.AboutMe{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 30vh ;
+    width: 60%;
+    margin-left: 20% ;
+    transition: 0.5s;
+}
+
+.AboutMe:hover{
+    box-shadow:0 0 20px 5px rgb(207, 199, 140) ;
+} 
+
+
+.AboutMe ul{
+    margin-top: 5vh ;
+}
+
+.AboutMe ul li{
+    color: hsl(240, 70%, 40%) ;
+    list-style: none;
+}
+
+.AboutMe ul li a{
+    color: hsl(240, 70%, 40%) ;
+    text-decoration: none;
+}

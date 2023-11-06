@@ -1,0 +1,91 @@
+footer{
+    height: 100vh;
+    background-color: white;
+    color: rgb(56, 56, 255);
+}
+
+.SocialMedia ol{
+    display: flex;
+    vertical-align: top;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 40vh;
+    margin-left: -40px;
+}
+
+.SocialMedia ol li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    margin:2px;
+    cursor: pointer;
+}
+
+.SocialMedia ol li a{
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(56, 56, 255);
+    border-radius: 10px;
+    transition: 0s;
+}
+
+.SocialMedia ol li a:visited{
+    color: rgb(56, 56, 255);
+}
+
+.Contact{
+    margin-top: 20vh;
+    display: flex ;
+    justify-content: center;
+}
+
+.ContactBtn{
+    margin-top: 5vh;
+    display: flex ;
+    justify-content: center;
+}
+
+.ContactBtn button{
+    margin: 5px;
+    height: 30px;
+    width: 100px;
+    color: rgb(56, 56, 255);
+    background-color: white;
+    border: solid 2px rgb(56, 56, 255);
+    transition: 0.2s;
+}
+.ContactBtn button a{
+    color: rgb(56, 56, 255);
+    text-decoration: none;
+}
+
+.ContactBtn button:hover{
+    background-color: rgb(56, 56, 255);
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+.ContactBtn button:hover{
+    color: white;
+}
+
+footer p{
+    font-size: 2em;
+    margin: 10px;
+}
+
+footer p span{
+    color: rgb(56, 56, 255);
+}
+
+.CopyRight{
+    margin-top: 20vh;
+    display: flex ;
+    justify-content: center;
+}
+
+
+

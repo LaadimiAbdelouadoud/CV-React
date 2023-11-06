@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a0e49da45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Images/Formulaire2.png">
+    <title>Formulaire</title>
+</head>
+<body>
+    <img  id="Logo" src="Images/EMILogo.png">
+    <div class="container">
+        <form id="form" method="get" action="resultat.html">
+            <div class="title">
+                <h1>Formulaire</h1>
+            </div>
+
+            <!--Nom-->
+            <div class="input-control neutral">
+                <label for="nom">Nom</label><br>
+                <input type="text" name="nom" id="nom" placeholder="Ex: LAADIMI" onkeyup="validateNom() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Prenom-->
+            <div class="input-control neutral">
+                <label for="prenom">Prenom</label><br>
+                <input type="text" name="prenom" id="prenom" placeholder="Ex: Abdelouadoud" onkeyup="validatePrenom() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Email-->
+            <div class="input-control neutral">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Ex: abcdef@mail.com" onkeyup="validateEmail() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Date de Naissance-->
+            <div class="input-control neutral">
+                <label for="dateNaissance">Date de naissance</label><br>
+                <input type="Date" name="dateNaissance" id="dateNaissance" onchange="validateDateNaissance()  ; ValidateForm()" onkeyup="validateDateNaissance() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--tel num-->
+            <div class="input-control neutral">
+                <label for="tel">Telephone</label><br>
+                <input type="text" name="tel" id="tel" placeholder="Ex: 0612345678" onkeyup="validateTel() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Situation familiale-->
+            <div class="input-control neutral">
+                <label for="situationFamiliale">Situation Familiale</label><br>
+
+                <label for="celibataire">Celibataire</label>
+                <input type="radio" name="situationFamiliale" id="celibataire" value="celibataire" onchange="validateSituation() ; ValidateForm()">
+
+                <label for="Marie">Marie(e)</label>
+                <input type="radio" name="situationFamiliale" id="Marie" value="Marié" onchange="validateSituation() ; ValidateForm()">
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Sexe-->
+            <div class="input-control neutral">
+                <label for="sexe">Sexe</label><br>
+                <select id="sexe" name="sexe" onchange="validateSexe() ; ValidateForm()">
+                    <option value=''></option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+
+                <div class="errorMessage"></div>
+            </div>
+
+            <!--Valider/reinitialiser -->
+            <div class="submitButton input-control neutral">
+                <button type="submit" name="valider" id="valider">Valider</button>
+                <button type="reset" name="reinitialiser" id="reinitialiser" onclick="resetClass()">reinitialiser</button>
+                <div class="errorMessage"></div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footerDiv">
+        <i class="fa-regular fa-copyright"></i> By Laadimi Abdelouadoud & Aicha Ohna.
+    </div>
+</footer>
+</html>

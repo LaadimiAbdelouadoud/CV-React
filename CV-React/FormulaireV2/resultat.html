@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleResultat.css">
+    <title>resultat de formulaire</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var nom = urlParams.get("nom");
+        var prenom = urlParams.get("prenom");
+        var email = urlParams.get("email");
+        var dateNaissance = urlParams.get("dateNaissance");
+        var tel = urlParams.get("tel");
+        var situationFamiliale = urlParams.get("situationFamiliale");
+        var sexe = urlParams.get("sexe");
+        var situation = urlParams.get("Situation");
+
+        document.write(`<p><b>Nom:</b> ${nom}</p>`);
+        document.write(`<p><b>Prénom:</b> ${prenom}</p>`);
+        document.write(`<p><b>Email:</b> ${email}</p>`);
+        document.write(`<p><b>Date de naissance:</b> ${dateNaissance}</p>`);
+        document.write(`<p><b>Telephone:</b> ${tel}</p>`);
+        document.write(`<p><b>Situation familiale:</b> ${situationFamiliale}</p>`);
+        document.write(`<p><b>Sexe:</b> ${sexe}</p>`);
+        document.write(`<a href="Formulaire.html">Retour</a>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    font-family: calibri;
+}
+
+div ul{
+    position: absolute;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 550;
+}
+
+div ul li{
+    padding: 5px;
+}
+
+section h1{
+    text-align: center;
+    color: white;
+}
+
+i{
+    margin-right: 10px;
+}

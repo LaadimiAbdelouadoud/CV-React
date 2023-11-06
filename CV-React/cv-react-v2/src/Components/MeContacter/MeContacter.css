@@ -1,0 +1,147 @@
+.MeContacter{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.fa-circle-chevron-left{
+    position: absolute;
+    font-size: 50px;
+    color: rgb(56, 56, 255);
+    top: 10px;
+    left: 10px;
+}
+
+.Formulaire{
+    background-color: rgb(255, 255, 255);
+    border: solid 2px rgb(56, 56, 255);
+    border-radius: 20px;
+    width: 60%;
+    height: 90%;
+    padding: 20px;
+
+}
+
+.Formulaire h1{
+    color: rgb(56, 56, 255);
+    margin-bottom: 20px;
+}
+
+.formInputDiv{
+    margin-top: 15px;
+}
+
+.formInputDiv label{
+    font-weight: 550;
+    color: rgb(56, 56, 255);
+}
+
+.not-area{
+    height: 20px;
+    width:200px;
+}
+
+/*neutre*/
+
+.neutral .formInput{
+    border: solid rgb(56, 56, 255) 2px;
+}
+
+
+.neutral .formInput:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.neutral .formInput:focus{
+    outline: 0;
+}
+
+.neutral span{
+    display: none;
+}
+
+
+/*error*/
+
+.error .formInput{
+    border: solid red 2px;
+}
+
+.error .formInput:hover{
+    background-color: rgb(255, 200, 200);
+}
+
+.error .formInput:focus{
+    outline: 0;
+}
+
+.error span{
+    color: red;
+}
+
+.error span .fa-circle-check{
+    display: none;
+}
+
+/*success*/
+
+.success .formInput{
+    border: solid rgb(0, 175, 0) 2px;
+
+}
+
+.success .formInput:hover{
+    background-color: rgb(200, 255, 200);
+}
+
+.success .formInput:focus{
+    outline: 0;
+}
+
+.success span{
+    color: rgb(0, 175, 0);
+}
+
+.success span .fa-circle-exclamation{
+    display: none;
+}
+
+/*Bouttons*/
+
+.buttons button{
+    margin-top: 20px;
+    margin-right: 10px;
+    color: rgb(56, 56, 255);
+    background-color: white;
+    border: solid rgb(56, 56, 255) 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgb(56, 56, 255);
+    color: white;
+}
+
+/*mailAffiche*/
+
+.mailAffiche{
+    height: 150px;
+    padding: 5px;
+}
+
+.mailAffiche h3{
+    color: rgb(56, 56, 255);
+    margin-bottom: 10px;
+}
+
+.affiche{
+    border: solid rgb(56, 56, 255) 2px;
+}
+
+.nonAffiche{
+    display: none;
+}

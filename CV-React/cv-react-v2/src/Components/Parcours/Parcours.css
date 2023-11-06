@@ -1,0 +1,42 @@
+#Parcours{
+    background-color: hsl(240, 70%, 50%);
+    height: 110vh;
+}
+
+#divParcours{
+    position: absolute;
+    width: 100%;
+    transform:translateY(30vh);
+    color: white;
+}
+
+#Parcours div{
+    position: absolute;
+    transform:translateY(30vh);
+    color: white;
+}
+
+.Parcours{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 25vh ;
+    width: 60%;
+    margin-left: 20% ;
+    transition: 0.5s;
+}
+
+.Parcours:hover{
+    box-shadow:0 0 20px 5px rgb(207, 199, 140) ;
+} 
+
+
+.Parcours ul{
+    margin-top: 5vh ;
+}
+
+.Parcours ul li{
+    color: hsl(240, 70%, 40%) ;
+}
+
