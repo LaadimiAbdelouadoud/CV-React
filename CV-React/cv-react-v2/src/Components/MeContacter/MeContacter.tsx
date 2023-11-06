@@ -46,7 +46,7 @@ function MeContacter(){
             type: "message",
             placeholder: "Bonjour, je voudrais",
             label: "Message",
-            expression: /^[a-zA-Z0-9._%+- ]+$/,
+            expression: /^[a-zA-Z0-9._%+\- ]+$/,
             errorClass: "neutral",
             errorMessage: "Forme non valide",
           },
